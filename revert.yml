@@ -1,0 +1,12 @@
+---
+- hosts: localhosts
+  connection: local
+  gather_facts: False
+  roles:
+    - role: bpleines.playground
+      my_name: Branden P
+      my_profession: Software Consultant
+  
+  tasks:
+    - name: "Verify the completion of the play"
+      shell: echo "Play Completed!" 

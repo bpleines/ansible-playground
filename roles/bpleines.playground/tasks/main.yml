@@ -6,11 +6,17 @@
   shell: echo "Your profession is {{ my_profession }}"
   changed_when: no
 
+- name: "Obtain working directory path for use in next task"
+  shell: pwd
+  register: printed_working_directory
+
 - name: "Add a background to your webpage"
   lineinfile: 
-    dest: /home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html
+    dest: '{{ item }}/roles/bpleines.playground/files/index.html'
     insertafter: 'meta'
     line: '<link rel="stylesheet" type="text/css" href="redhatbackground.css">'
+  with_items:
+      - '{{ printed_working_directory.stdout_lines }}'
 
 - name: "Remove the default body content"
   lineinfile:

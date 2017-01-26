@@ -1,3 +1,8 @@
-- copy:
-  src: /home/bpleines/ansible-playground/roles/bpleines.playground/files/revert.html
-  dest: /home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html
+- name: "Obtain working directory path for use in next task"
+  shell: pwd
+  register: printed_working_directory
+
+- name: "Overwrite index.html with revert.html so you can start over"
+  copy: 
+    src: '{{ printed_working_directory }}/roles/bpleines.playground/files/revert.html'
+    dest: '{{ printed_working_directory }}/roles/bpleines.playground/files/index.html'
