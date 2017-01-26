@@ -1,0 +1,3 @@
+- copy:
+  src: /home/bpleines/ansible-playground/roles/bpleines.playground/files/revert.html
+  dest: /home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html

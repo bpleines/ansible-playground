@@ -1,0 +1,5 @@
+---
+# handlers file for bpleines.playground
+#handlers:
+  - name: Simple Handler
+    shell: echo "A profession has been disclosed."
