@@ -23,8 +23,8 @@ The playbook tasks run sequetially. After each task that you enter yes to step t
 <h3> Executing the revert </h3> 
 <ul>
 <li>Open myplaybook.yml and uncomment the revert: true variable declarance. </li>
-<li>Run <i>ansible-playbook myplaybook.yml -vvv</i>. You won't be prompted for a step by step, but notice that most of the previously executed tasks are skipped, but the "Overwrite..." task is executed. <li>
-<li> Refresh your web browser. You're back to square one.
+<li>Run <i>ansible-playbook myplaybook.yml -vvv</i>. You won't be prompted for a step by step, but notice that most of the previously executed tasks are skipped, but the "Overwrite..." task is executed. </li>
+<li> Refresh your web browser. You're back to square one.</li>
 </body>
 
 
