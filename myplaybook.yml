@@ -4,7 +4,9 @@
   gather_facts: False
   roles:
     - role: bpleines.playground
-      #revert: true
+      #my_name: Branden
+      #my_profession: Consultant
+      revert: true
   
   tasks:
     - name: "Verify the completion of your playbook run"

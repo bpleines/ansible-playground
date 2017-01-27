@@ -2,13 +2,13 @@
   shell: pwd
   register: printed_working_directory
 
-- name: "Set pwd to the value obtained above"
+- name: "Set an Ansible variable called pwd to the output registered from the task obtained above"
   set_fact:
      pwd: '{{ item }}'
   with_items:
       - '{{ printed_working_directory.stdout_lines }}'
 
-- name:
+- name: "Print out the value of your new pwd variable to ensure it's correct"
   debug:
     msg: '{{ pwd }}'
 
