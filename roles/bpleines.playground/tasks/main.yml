@@ -1,25 +1,22 @@
-- name: "Print your name"
-  shell: echo "Your name is {{ my_name }}"
-  changed_when: no
-
-- name: "Print your profession"
-  shell: echo "Your profession is {{ my_profession }}"
-  changed_when: no
-
-- name: "Obtain working directory path for use in next task"
+- name: "Obtain working directory path for your filesystem"
   shell: pwd
   register: printed_working_directory
 
-- name: "Add a background to your webpage"
-  lineinfile: 
-    dest: '{{ item }}/roles/bpleines.playground/files/index.html'
-    insertafter: 'meta'
-    line: '<link rel="stylesheet" type="text/css" href="redhatbackground.css">'
+- name: "Set pwd to the value obtained above"
+  set_fact:
+     pwd: '{{ item }}'
   with_items:
       - '{{ printed_working_directory.stdout_lines }}'
 
-- name: "Remove the default body content"
-  lineinfile:
-    dest: /home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html
-    regexp: 'Nothing yet...'
-    state: absent
+- name:
+  debug:
+    msg: '{{ pwd }}'
+
+- name: "Call apply.yml when revert equals false"
+  include: tasks/apply.yml
+  when: "revert == false"
+
+- name: "Call revert.yml when revert equals true"
+  include: tasks/revert.yml
+  when: "revert == true"
+

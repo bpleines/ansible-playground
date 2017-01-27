@@ -1,7 +1,0 @@
-body {
-    background-image: url("redhatBackground.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #b30000; 
-}

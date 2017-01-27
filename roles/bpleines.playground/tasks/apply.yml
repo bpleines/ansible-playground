@@ -1,0 +1,21 @@
+- block:
+   - name: "Print your name"
+     shell: echo "Your name is {{ my_name }}"
+     changed_when: no
+
+   - name: "Print your profession"
+     shell: echo "Your profession is {{ my_profession }}"
+     changed_when: no
+
+   - name: "Add a background to your webpage"
+     lineinfile:
+        dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
+        insertafter: 'meta'
+        line: '<link rel="stylesheet" type="text/css" href="redhatbackground.css">'
+
+   - name: "Remove the default body content"
+     lineinfile:
+        dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
+        regexp: 'Nothing yet...'
+        state: absent
+  when: "revert == false"

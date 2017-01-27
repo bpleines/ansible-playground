@@ -8957,3 +8957,3457 @@ u'0:00:00.001884', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'war
 
 
 2017-01-26 14:01:24,608 p=17505 u=bpleines |  localhost                  : ok=6    changed=4    unreachable=0    failed=0   
+2017-01-26 16:02:49,399 p=22266 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-26 16:02:49,499 p=22266 u=bpleines |   _____________________
+< PLAYBOOK: apply.yml >
+ ---------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:49,500 p=22266 u=bpleines |  1 plays in apply.yml
+2017-01-26 16:02:49,523 p=22266 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:49,567 p=22266 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:49,567 p=22266 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-26 16:02:49,681 p=22266 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-26 16:02:49,783 p=22266 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your name is Branden P\"", 
+    "delta": "0:00:00.001989", 
+    "end": "2017-01-26 16:02:49.770313", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your name is Branden P\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-26 16:02:49.768324", 
+    "stderr": "", 
+    "stdout": "Your name is Branden P", 
+    "stdout_lines": [
+        "Your name is Branden P"
+    ], 
+    "warnings": []
+}
+2017-01-26 16:02:49,808 p=22266 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:49,808 p=22266 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-26 16:02:49,841 p=22266 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-26 16:02:49,950 p=22266 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your profession is Software Consultant\"", 
+    "delta": "0:00:00.002046", 
+    "end": "2017-01-26 16:02:49.937686", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your profession is Software Consultant\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-26 16:02:49.935640", 
+    "stderr": "", 
+    "stdout": "Your profession is Software Consultant", 
+    "stdout_lines": [
+        "Your profession is Software Consultant"
+    ], 
+    "warnings": []
+}
+2017-01-26 16:02:49,972 p=22266 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for use in next task]                                     /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:49,972 p=22266 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:9
+2017-01-26 16:02:49,990 p=22266 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-26 16:02:50,094 p=22266 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.002345", 
+    "end": "2017-01-26 16:02:50.083055", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-26 16:02:50.080710", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-26 16:02:50,116 p=22266 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:50,116 p=22266 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:13
+2017-01-26 16:02:50,244 p=22266 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-01-26 16:02:50,352 p=22266 u=bpleines |  changed: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "backup": "", 
+    "changed": true, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "meta", 
+            "insertbefore": null, 
+            "line": "<link rel=\"stylesheet\" type=\"text/css\" href=\"redhatbackground.css\">", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "item": "/home/bpleines/ansible-playground", 
+    "msg": "line added"
+}
+2017-01-26 16:02:50,375 p=22266 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:50,375 p=22266 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:21
+2017-01-26 16:02:50,391 p=22266 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-01-26 16:02:50,496 p=22266 u=bpleines |  changed: [localhost] => {
+    "backup": "", 
+    "changed": true, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "found": 1, 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": null, 
+            "insertbefore": null, 
+            "line": null, 
+            "mode": null, 
+            "owner": null, 
+            "regexp": "Nothing yet...", 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "absent", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "msg": "1 line(s) removed"
+}
+2017-01-26 16:02:50,519 p=22266 u=bpleines |   __________________________________________
+< TASK [Verify that anything is being run] >
+ ------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:50,519 p=22266 u=bpleines |  task path: /home/bpleines/ansible-playground/apply.yml:11
+2017-01-26 16:02:50,536 p=22266 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-26 16:02:50,639 p=22266 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "echo \"Verified!\"", 
+    "delta": "0:00:00.002181", 
+    "end": "2017-01-26 16:02:50.627611", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Verified!\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-26 16:02:50.625430", 
+    "stderr": "", 
+    "stdout": "Verified!", 
+    "stdout_lines": [
+        "Verified!"
+    ], 
+    "warnings": []
+}
+2017-01-26 16:02:50,663 p=22266 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-26 16:02:50,663 p=22266 u=bpleines |  localhost                  : ok=6    changed=4    unreachable=0    failed=0   
+2017-01-27 09:05:20,124 p=4545 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:05:20,146 p=4545 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 2, column 24, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- block:
+  when: '{{ revert }}' == false
+                       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:06:07,695 p=4748 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:06:07,710 p=4748 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  when: "'{{ revert }}' == false"
+  - name: "Print your name"
+  ^ here
+
+2017-01-27 09:07:59,179 p=4846 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:07:59,193 p=4846 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 27, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      state: absent
+   when: '{{ revert }}' == false
+   ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:09:30,832 p=4925 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:09:30,848 p=4925 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 27, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      state: absent
+   when: '{{ revert }}' == 'false'
+   ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:11:07,023 p=4996 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:11:07,038 p=4996 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 27, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      state: absent
+   when: ('{{ revert }}' == false)
+   ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:12:27,462 p=5247 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:12:27,479 p=5247 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 27, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      state: absent
+   when: revert == false
+   ^ here
+
+2017-01-27 09:13:08,327 p=5293 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:13:08,343 p=5293 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 27, column 24, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      state: absent
+  when: '{{ revert }}' == false
+                       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:13:30,919 p=5332 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:13:30,935 p=5332 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 35, column 24, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      dest: '{{ printed_working_directory }}/roles/bpleines.playground/files/index.html'
+  when: '{{ revert }}' == true
+                       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:14:19,433 p=5383 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:14:19,449 p=5383 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 35, column 24, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      dest: '{{ printed_working_directory }}/roles/bpleines.playground/files/index.html'
+  when: '{{ revert }}' == true
+                       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:14:45,354 p=5432 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:14:45,506 p=5432 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:14:45,507 p=5432 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:14:45,527 p=5432 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:14:45,593 p=5432 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:14:45,593 p=5432 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:2
+2017-01-27 09:14:45,627 p=5432 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:14:45,648 p=5432 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:14:45,649 p=5432 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:6
+2017-01-27 09:14:45,677 p=5432 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:14:45,701 p=5432 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for use in next task]                                     /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:14:45,702 p=5432 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:10
+2017-01-27 09:14:45,727 p=5432 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:14:45,749 p=5432 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:14:45,750 p=5432 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:14
+2017-01-27 09:14:45,776 p=5432 u=bpleines |  fatal: [localhost]: FAILED! => {
+    "failed": true, 
+    "msg": "'dict object' has no attribute 'stdout_lines'"
+}
+2017-01-27 09:14:45,800 p=5432 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:14:45,801 p=5432 u=bpleines |  localhost                  : ok=0    changed=0    unreachable=0    failed=1   
+2017-01-27 09:16:15,020 p=5502 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:16:15,120 p=5502 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,120 p=5502 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:16:15,143 p=5502 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,192 p=5502 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for use in next task]                                     /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,192 p=5502 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:16:15,297 p=5502 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:16:15,409 p=5502 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001996", 
+    "end": "2017-01-27 09:16:15.395478", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:16:15.393482", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:16:15,431 p=5502 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,431 p=5502 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:6
+2017-01-27 09:16:15,460 p=5502 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:16:15,482 p=5502 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,483 p=5502 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:10
+2017-01-27 09:16:15,515 p=5502 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:16:15,537 p=5502 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,537 p=5502 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:14
+2017-01-27 09:16:15,568 p=5502 u=bpleines |  skipping: [localhost] => (item=/home/bpleines/ansible-playground)  => {
+    "changed": false, 
+    "item": "/home/bpleines/ansible-playground", 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:16:15,593 p=5502 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,593 p=5502 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:22
+2017-01-27 09:16:15,628 p=5502 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:16:15,656 p=5502 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,657 p=5502 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:31
+2017-01-27 09:16:15,680 p=5502 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:16:15,704 p=5502 u=bpleines |   __________________________________________
+< TASK [Verify that anything is being run] >
+ ------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,705 p=5502 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:10
+2017-01-27 09:16:15,714 p=5502 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:16:15,831 p=5502 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "echo \"Verified!\"", 
+    "delta": "0:00:00.001993", 
+    "end": "2017-01-27 09:16:15.819732", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Verified!\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:16:15.817739", 
+    "stderr": "", 
+    "stdout": "Verified!", 
+    "stdout_lines": [
+        "Verified!"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:16:15,852 p=5502 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:16:15,852 p=5502 u=bpleines |  localhost                  : ok=2    changed=2    unreachable=0    failed=0   
+2017-01-27 09:20:05,390 p=5651 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:20:05,405 p=5651 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 27, column 24, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      state: absent
+  when: '{{ revert }}' == false
+                       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-01-27 09:24:21,138 p=5968 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:24:21,235 p=5968 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,236 p=5968 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:24:21,258 p=5968 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,305 p=5968 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,305 p=5968 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:24:21,401 p=5968 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:24:21,500 p=5968 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.002052", 
+    "end": "2017-01-27 09:24:21.489369", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:24:21.487317", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:24:21,521 p=5968 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,522 p=5968 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:6
+2017-01-27 09:24:21,550 p=5968 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:24:21,574 p=5968 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,575 p=5968 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:10
+2017-01-27 09:24:21,597 p=5968 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:24:21,622 p=5968 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,622 p=5968 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:14
+2017-01-27 09:24:21,652 p=5968 u=bpleines |  skipping: [localhost] => (item=/home/bpleines/ansible-playground)  => {
+    "changed": false, 
+    "item": "/home/bpleines/ansible-playground", 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:24:21,677 p=5968 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,677 p=5968 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:22
+2017-01-27 09:24:21,701 p=5968 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:24:21,725 p=5968 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,725 p=5968 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:31
+2017-01-27 09:24:21,751 p=5968 u=bpleines |   [WARNING]: Exception in safe_eval() on expr: {u'changed': True, u'end': u'2017-01-27 09:24:21.489369',
+u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27
+09:24:21.487317', u'stderr': u'', u'delta': u'0:00:00.002052', 'stdout_lines': [u'/home/bpleines/ansible-
+playground'], u'warnings': []}/roles/bpleines.playground/files/index.html (invalid expression
+({u'changed': True, u'end': u'2017-01-27 09:24:21.489369', u'stdout': u'/home/bpleines/ansible-
+playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:24:21.487317', u'stderr': u'', u'delta':
+u'0:00:00.002052', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings':
+[]}/roles/bpleines.playground/files/index.html))
+
+2017-01-27 09:24:21,754 p=5968 u=bpleines |   [WARNING]: Exception in safe_eval() on expr: {u'changed': True, u'end': u'2017-01-27 09:24:21.489369',
+u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27
+09:24:21.487317', u'stderr': u'', u'delta': u'0:00:00.002052', 'stdout_lines': [u'/home/bpleines/ansible-
+playground'], u'warnings': []}/roles/bpleines.playground/files/revert.html (invalid expression
+({u'changed': True, u'end': u'2017-01-27 09:24:21.489369', u'stdout': u'/home/bpleines/ansible-
+playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:24:21.487317', u'stderr': u'', u'delta':
+u'0:00:00.002052', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings':
+[]}/roles/bpleines.playground/files/revert.html))
+
+2017-01-27 09:24:21,762 p=5968 u=bpleines |  fatal: [localhost]: FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "dest": "{u'changed': True, u'end': u'2017-01-27 09:24:21.489369', u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:24:21.487317', u'stderr': u'', u'delta': u'0:00:00.002052', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings': []}/roles/bpleines.playground/files/index.html", 
+            "src": "{u'changed': True, u'end': u'2017-01-27 09:24:21.489369', u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:24:21.487317', u'stderr': u'', u'delta': u'0:00:00.002052', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings': []}/roles/bpleines.playground/files/revert.html"
+        }, 
+        "module_name": "copy"
+    }, 
+    "msg": "Unable to find '{u'changed': True, u'end': u'2017-01-27 09:24:21.489369', u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:24:21.487317', u'stderr': u'', u'delta': u'0:00:00.002052', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings': []}/roles/bpleines.playground/files/revert.html' in expected paths."
+}
+2017-01-27 09:24:21,787 p=5968 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:24:21,787 p=5968 u=bpleines |  localhost                  : ok=1    changed=1    unreachable=0    failed=1   
+2017-01-27 09:31:38,241 p=6223 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:31:38,339 p=6223 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,339 p=6223 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:31:38,362 p=6223 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,405 p=6223 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,405 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:31:38,502 p=6223 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:31:38,601 p=6223 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001954", 
+    "end": "2017-01-27 09:31:38.588970", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:31:38.587016", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:31:38,622 p=6223 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,622 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:31:38,638 p=6223 u=bpleines |  ok: [localhost] => {
+    "ansible_facts": {
+        "pwd": "printed_working_directory.stdout_lines"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "printed_working_directory.stdout_lines"
+        }, 
+        "module_name": "set_fact"
+    }
+}
+2017-01-27 09:31:38,659 p=6223 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,659 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:9
+2017-01-27 09:31:38,690 p=6223 u=bpleines |  ok: [localhost] => {
+    "msg": "printed_working_directory.stdout_lines"
+}
+2017-01-27 09:31:38,713 p=6223 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,713 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:14
+2017-01-27 09:31:38,739 p=6223 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:31:38,760 p=6223 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,761 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:18
+2017-01-27 09:31:38,789 p=6223 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:31:38,812 p=6223 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,812 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:22
+2017-01-27 09:31:38,838 p=6223 u=bpleines |  skipping: [localhost] => (item=/home/bpleines/ansible-playground)  => {
+    "changed": false, 
+    "item": "/home/bpleines/ansible-playground", 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:31:38,861 p=6223 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,861 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:30
+2017-01-27 09:31:38,889 p=6223 u=bpleines |  skipping: [localhost] => (item=/home/bpleines/ansible-playground)  => {
+    "changed": false, 
+    "item": "/home/bpleines/ansible-playground", 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:31:38,914 p=6223 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,914 p=6223 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:41
+2017-01-27 09:31:38,948 p=6223 u=bpleines |   [WARNING]: Exception in safe_eval() on expr: {u'changed': True, u'end': u'2017-01-27 09:31:38.588970',
+u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27
+09:31:38.587016', u'stderr': u'', u'delta': u'0:00:00.001954', 'stdout_lines': [u'/home/bpleines/ansible-
+playground'], u'warnings': []}/roles/bpleines.playground/files/index.html (invalid expression
+({u'changed': True, u'end': u'2017-01-27 09:31:38.588970', u'stdout': u'/home/bpleines/ansible-
+playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:31:38.587016', u'stderr': u'', u'delta':
+u'0:00:00.001954', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings':
+[]}/roles/bpleines.playground/files/index.html))
+
+2017-01-27 09:31:38,949 p=6223 u=bpleines |   [WARNING]: Exception in safe_eval() on expr: {u'changed': True, u'end': u'2017-01-27 09:31:38.588970',
+u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27
+09:31:38.587016', u'stderr': u'', u'delta': u'0:00:00.001954', 'stdout_lines': [u'/home/bpleines/ansible-
+playground'], u'warnings': []}/roles/bpleines.playground/files/revert.html (invalid expression
+({u'changed': True, u'end': u'2017-01-27 09:31:38.588970', u'stdout': u'/home/bpleines/ansible-
+playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:31:38.587016', u'stderr': u'', u'delta':
+u'0:00:00.001954', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings':
+[]}/roles/bpleines.playground/files/revert.html))
+
+2017-01-27 09:31:38,954 p=6223 u=bpleines |  failed: [localhost] (item=/home/bpleines/ansible-playground) => {
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "dest": "{u'changed': True, u'end': u'2017-01-27 09:31:38.588970', u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:31:38.587016', u'stderr': u'', u'delta': u'0:00:00.001954', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings': []}/roles/bpleines.playground/files/index.html", 
+            "src": "{u'changed': True, u'end': u'2017-01-27 09:31:38.588970', u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:31:38.587016', u'stderr': u'', u'delta': u'0:00:00.001954', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings': []}/roles/bpleines.playground/files/revert.html"
+        }, 
+        "module_name": "copy"
+    }, 
+    "item": "/home/bpleines/ansible-playground", 
+    "msg": "Unable to find '{u'changed': True, u'end': u'2017-01-27 09:31:38.588970', u'stdout': u'/home/bpleines/ansible-playground', u'cmd': u'pwd', u'rc': 0, u'start': u'2017-01-27 09:31:38.587016', u'stderr': u'', u'delta': u'0:00:00.001954', 'stdout_lines': [u'/home/bpleines/ansible-playground'], u'warnings': []}/roles/bpleines.playground/files/revert.html' in expected paths."
+}
+2017-01-27 09:31:38,975 p=6223 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:31:38,975 p=6223 u=bpleines |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-27 09:35:29,655 p=6349 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:35:29,754 p=6349 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:29,755 p=6349 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:35:29,779 p=6349 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:29,824 p=6349 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:29,824 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:35:29,925 p=6349 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:35:30,023 p=6349 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001841", 
+    "end": "2017-01-27 09:35:30.012049", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:35:30.010208", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:35:30,044 p=6349 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,045 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:35:30,060 p=6349 u=bpleines |  ok: [localhost] => {
+    "ansible_facts": {
+        "pwd": "printed_working_directory.stdout_lines"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "printed_working_directory.stdout_lines"
+        }, 
+        "module_name": "set_fact"
+    }
+}
+2017-01-27 09:35:30,080 p=6349 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,081 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:9
+2017-01-27 09:35:30,110 p=6349 u=bpleines |  ok: [localhost] => {
+    "msg": "printed_working_directory.stdout_lines"
+}
+2017-01-27 09:35:30,132 p=6349 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,132 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:14
+2017-01-27 09:35:30,159 p=6349 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:35:30,182 p=6349 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,182 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:18
+2017-01-27 09:35:30,209 p=6349 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:35:30,233 p=6349 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,234 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:22
+2017-01-27 09:35:30,257 p=6349 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:35:30,282 p=6349 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,282 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:28
+2017-01-27 09:35:30,307 p=6349 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:35:30,332 p=6349 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,332 p=6349 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:36
+2017-01-27 09:35:30,364 p=6349 u=bpleines |  fatal: [localhost]: FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "dest": "printed_working_directory.stdout_lines/roles/bpleines.playground/files/index.html", 
+            "src": "printed_working_directory.stdout_lines/roles/bpleines.playground/files/revert.html"
+        }, 
+        "module_name": "copy"
+    }, 
+    "msg": "Unable to find 'printed_working_directory.stdout_lines/roles/bpleines.playground/files/revert.html' in expected paths."
+}
+2017-01-27 09:35:30,386 p=6349 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:35:30,386 p=6349 u=bpleines |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-27 09:36:58,023 p=6473 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:36:58,121 p=6473 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,122 p=6473 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:36:58,144 p=6473 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,188 p=6473 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,189 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:36:58,289 p=6473 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:36:58,387 p=6473 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001952", 
+    "end": "2017-01-27 09:36:58.376551", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:36:58.374599", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:36:58,408 p=6473 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,409 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:36:58,438 p=6473 u=bpleines |  ok: [localhost] => {
+    "ansible_facts": {
+        "pwd": [
+            "/home/bpleines/ansible-playground"
+        ]
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": [
+                "/home/bpleines/ansible-playground"
+            ]
+        }, 
+        "module_name": "set_fact"
+    }
+}
+2017-01-27 09:36:58,462 p=6473 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,463 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:9
+2017-01-27 09:36:58,494 p=6473 u=bpleines |  ok: [localhost] => {
+    "msg": [
+        "/home/bpleines/ansible-playground"
+    ]
+}
+2017-01-27 09:36:58,514 p=6473 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,514 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:14
+2017-01-27 09:36:58,542 p=6473 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:36:58,566 p=6473 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,566 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:18
+2017-01-27 09:36:58,593 p=6473 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:36:58,614 p=6473 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,615 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:22
+2017-01-27 09:36:58,643 p=6473 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:36:58,668 p=6473 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,668 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:28
+2017-01-27 09:36:58,695 p=6473 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:36:58,718 p=6473 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,718 p=6473 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:36
+2017-01-27 09:36:58,747 p=6473 u=bpleines |   [WARNING]: Exception in safe_eval() on expr: [u'/home/bpleines/ansible-
+playground']/roles/bpleines.playground/files/index.html (invalid expression ([u'/home/bpleines/ansible-
+playground']/roles/bpleines.playground/files/index.html))
+
+2017-01-27 09:36:58,748 p=6473 u=bpleines |   [WARNING]: Exception in safe_eval() on expr: [u'/home/bpleines/ansible-
+playground']/roles/bpleines.playground/files/revert.html (invalid expression ([u'/home/bpleines/ansible-
+playground']/roles/bpleines.playground/files/revert.html))
+
+2017-01-27 09:36:58,754 p=6473 u=bpleines |  fatal: [localhost]: FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "dest": "[u'/home/bpleines/ansible-playground']/roles/bpleines.playground/files/index.html", 
+            "src": "[u'/home/bpleines/ansible-playground']/roles/bpleines.playground/files/revert.html"
+        }, 
+        "module_name": "copy"
+    }, 
+    "msg": "Unable to find '[u'/home/bpleines/ansible-playground']/roles/bpleines.playground/files/revert.html' in expected paths."
+}
+2017-01-27 09:36:58,778 p=6473 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:36:58,778 p=6473 u=bpleines |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-27 09:38:46,408 p=6591 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:38:46,507 p=6591 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,507 p=6591 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:38:46,530 p=6591 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,573 p=6591 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,573 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:38:46,672 p=6591 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:38:46,772 p=6591 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001900", 
+    "end": "2017-01-27 09:38:46.760255", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:38:46.758355", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:38:46,791 p=6591 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,792 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:38:46,805 p=6591 u=bpleines |  ok: [localhost] => {
+    "ansible_facts": {
+        "pwd": "printed_working_directory.stdout_lines"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "printed_working_directory.stdout_lines"
+        }, 
+        "module_name": "set_fact"
+    }
+}
+2017-01-27 09:38:46,826 p=6591 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,826 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:9
+2017-01-27 09:38:46,855 p=6591 u=bpleines |  ok: [localhost] => {
+    "msg": "printed_working_directory.stdout_lines"
+}
+2017-01-27 09:38:46,877 p=6591 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,878 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:14
+2017-01-27 09:38:46,900 p=6591 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:38:46,923 p=6591 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,924 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:18
+2017-01-27 09:38:46,951 p=6591 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:38:46,971 p=6591 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:46,972 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:22
+2017-01-27 09:38:46,999 p=6591 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:38:47,021 p=6591 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:47,022 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:28
+2017-01-27 09:38:47,051 p=6591 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:38:47,071 p=6591 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:47,071 p=6591 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:36
+2017-01-27 09:38:47,105 p=6591 u=bpleines |  fatal: [localhost]: FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "dest": "printed_working_directory.stdout_lines/roles/bpleines.playground/files/index.html", 
+            "src": "printed_working_directory.stdout_lines/roles/bpleines.playground/files/revert.html"
+        }, 
+        "module_name": "copy"
+    }, 
+    "msg": "Unable to find 'printed_working_directory.stdout_lines/roles/bpleines.playground/files/revert.html' in expected paths."
+}
+2017-01-27 09:38:47,130 p=6591 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:38:47,131 p=6591 u=bpleines |  localhost                  : ok=3    changed=1    unreachable=0    failed=1   
+2017-01-27 09:40:58,723 p=6697 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:40:58,739 p=6697 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 11, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name:
+^ here
+
+2017-01-27 09:41:15,034 p=6759 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:41:15,131 p=6759 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,131 p=6759 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:41:15,155 p=6759 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,198 p=6759 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,198 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:41:15,297 p=6759 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:41:15,397 p=6759 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.002049", 
+    "end": "2017-01-27 09:41:15.384737", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:41:15.382688", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:41:15,418 p=6759 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,419 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:41:15,449 p=6759 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "ansible_facts": {
+        "pwd": "/home/bpleines/ansible-playground"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "/home/bpleines/ansible-playground"
+        }, 
+        "module_name": "set_fact"
+    }, 
+    "item": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:41:15,475 p=6759 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,475 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:11
+2017-01-27 09:41:15,506 p=6759 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:41:15,526 p=6759 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,526 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:16
+2017-01-27 09:41:15,554 p=6759 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:41:15,578 p=6759 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,579 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:20
+2017-01-27 09:41:15,604 p=6759 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:41:15,626 p=6759 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,626 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:24
+2017-01-27 09:41:15,654 p=6759 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:41:15,679 p=6759 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,679 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:30
+2017-01-27 09:41:15,705 p=6759 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:41:15,728 p=6759 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:15,729 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:38
+2017-01-27 09:41:15,848 p=6759 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/stat.py
+2017-01-27 09:41:16,029 p=6759 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/copy.py
+2017-01-27 09:41:16,123 p=6759 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "checksum": "1996bdde48d59aabee08e580272753d0d19df64c", 
+    "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+    "gid": 1000, 
+    "group": "bpleines", 
+    "invocation": {
+        "module_args": {
+            "backup": false, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": true, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": "revert.html", 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": "/home/bpleines/.ansible/tmp/ansible-tmp-1485538875.94-113092452832524/source", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "md5sum": "579cbecfb82c6377d3243d9d79034db8", 
+    "mode": "0664", 
+    "owner": "bpleines", 
+    "secontext": "unconfined_u:object_r:user_home_t:s0", 
+    "size": 129, 
+    "src": "/home/bpleines/.ansible/tmp/ansible-tmp-1485538875.94-113092452832524/source", 
+    "state": "file", 
+    "uid": 1000
+}
+2017-01-27 09:41:16,144 p=6759 u=bpleines |   __________________________________________
+< TASK [Verify that anything is being run] >
+ ------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:16,145 p=6759 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:10
+2017-01-27 09:41:16,160 p=6759 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:41:16,256 p=6759 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "echo \"Verified!\"", 
+    "delta": "0:00:00.001928", 
+    "end": "2017-01-27 09:41:16.244573", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Verified!\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:41:16.242645", 
+    "stderr": "", 
+    "stdout": "Verified!", 
+    "stdout_lines": [
+        "Verified!"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:41:16,277 p=6759 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:41:16,277 p=6759 u=bpleines |  localhost                  : ok=5    changed=3    unreachable=0    failed=0   
+2017-01-27 09:50:55,983 p=7378 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:50:56,083 p=7378 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,084 p=7378 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:50:56,106 p=7378 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,151 p=7378 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,152 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:50:56,249 p=7378 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:50:56,349 p=7378 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.002010", 
+    "end": "2017-01-27 09:50:56.337163", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:50:56.335153", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:50:56,370 p=7378 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,370 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:50:56,400 p=7378 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "ansible_facts": {
+        "pwd": "/home/bpleines/ansible-playground"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "/home/bpleines/ansible-playground"
+        }, 
+        "module_name": "set_fact"
+    }, 
+    "item": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:50:56,425 p=7378 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,425 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:11
+2017-01-27 09:50:56,457 p=7378 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:50:56,478 p=7378 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,478 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:16
+2017-01-27 09:50:56,506 p=7378 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:50:56,531 p=7378 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,531 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:20
+2017-01-27 09:50:56,558 p=7378 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:50:56,579 p=7378 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,579 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:24
+2017-01-27 09:50:56,608 p=7378 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:50:56,631 p=7378 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,631 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:30
+2017-01-27 09:50:56,661 p=7378 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:50:56,683 p=7378 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:56,683 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:38
+2017-01-27 09:50:56,798 p=7378 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/stat.py
+2017-01-27 09:50:56,968 p=7378 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/file.py
+2017-01-27 09:50:57,074 p=7378 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "checksum": "1996bdde48d59aabee08e580272753d0d19df64c", 
+    "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+    "diff": {
+        "after": {
+            "path": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html"
+        }, 
+        "before": {
+            "path": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html"
+        }
+    }, 
+    "gid": 1000, 
+    "group": "bpleines", 
+    "invocation": {
+        "module_args": {
+            "backup": null, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "diff_peek": null, 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": "revert.html", 
+            "owner": null, 
+            "path": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "recurse": false, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": "revert.html", 
+            "state": null, 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "mode": "0664", 
+    "owner": "bpleines", 
+    "path": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+    "secontext": "unconfined_u:object_r:user_home_t:s0", 
+    "size": 129, 
+    "state": "file", 
+    "uid": 1000
+}
+2017-01-27 09:50:57,094 p=7378 u=bpleines |   ___________________________________________________
+< TASK [Verify the completion of your playbook run] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:57,094 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:10
+2017-01-27 09:50:57,123 p=7378 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:50:57,226 p=7378 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "echo \"Your playbook ran successfully\"", 
+    "delta": "0:00:00.001851", 
+    "end": "2017-01-27 09:50:57.215281", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your playbook ran successfully\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:50:57.213430", 
+    "stderr": "", 
+    "stdout": "Your playbook ran successfully", 
+    "stdout_lines": [
+        "Your playbook ran successfully"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:50:57,247 p=7378 u=bpleines |   __________________________________________________________
+< TASK [Verify the successful revert of your playbook run] >
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:57,248 p=7378 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:14
+2017-01-27 09:50:57,275 p=7378 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:50:57,300 p=7378 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:50:57,300 p=7378 u=bpleines |  localhost                  : ok=5    changed=2    unreachable=0    failed=0   
+2017-01-27 09:52:52,284 p=7556 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:52:52,383 p=7556 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:52,383 p=7556 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:52:52,407 p=7556 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:52,450 p=7556 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:52,450 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:52:52,548 p=7556 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:52:52,649 p=7556 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001959", 
+    "end": "2017-01-27 09:52:52.636834", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:52:52.634875", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:52:52,669 p=7556 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:52,669 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:52:52,700 p=7556 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "ansible_facts": {
+        "pwd": "/home/bpleines/ansible-playground"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "/home/bpleines/ansible-playground"
+        }, 
+        "module_name": "set_fact"
+    }, 
+    "item": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:52:52,722 p=7556 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:52,723 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:11
+2017-01-27 09:52:52,749 p=7556 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:52:52,772 p=7556 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:52,772 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:16
+2017-01-27 09:52:52,801 p=7556 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:52:52,898 p=7556 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your name is undefined\"", 
+    "delta": "0:00:00.001804", 
+    "end": "2017-01-27 09:52:52.886544", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your name is undefined\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:52:52.884740", 
+    "stderr": "", 
+    "stdout": "Your name is undefined", 
+    "stdout_lines": [
+        "Your name is undefined"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:52:52,919 p=7556 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:52,919 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:20
+2017-01-27 09:52:52,947 p=7556 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:52:53,049 p=7556 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your profession is mysterious\"", 
+    "delta": "0:00:00.001884", 
+    "end": "2017-01-27 09:52:53.037640", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your profession is mysterious\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:52:53.035756", 
+    "stderr": "", 
+    "stdout": "Your profession is mysterious", 
+    "stdout_lines": [
+        "Your profession is mysterious"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:52:53,070 p=7556 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:53,070 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:24
+2017-01-27 09:52:53,194 p=7556 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-01-27 09:52:53,299 p=7556 u=bpleines |  changed: [localhost] => {
+    "backup": "", 
+    "changed": true, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "meta", 
+            "insertbefore": null, 
+            "line": "<link rel=\"stylesheet\" type=\"text/css\" href=\"redhatbackground.css\">", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "msg": "line added"
+}
+2017-01-27 09:52:53,320 p=7556 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:53,320 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:30
+2017-01-27 09:52:53,350 p=7556 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-01-27 09:52:53,458 p=7556 u=bpleines |  changed: [localhost] => {
+    "backup": "", 
+    "changed": true, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "found": 1, 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": null, 
+            "insertbefore": null, 
+            "line": null, 
+            "mode": null, 
+            "owner": null, 
+            "regexp": "Nothing yet...", 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "absent", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "msg": "1 line(s) removed"
+}
+2017-01-27 09:52:53,479 p=7556 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:53,479 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:38
+2017-01-27 09:52:53,510 p=7556 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:52:53,533 p=7556 u=bpleines |   ___________________________________________________
+< TASK [Verify the completion of your playbook run] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:53,534 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:10
+2017-01-27 09:52:53,561 p=7556 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:52:53,661 p=7556 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "echo \"Your playbook ran successfully\"", 
+    "delta": "0:00:00.001833", 
+    "end": "2017-01-27 09:52:53.649938", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your playbook ran successfully\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:52:53.648105", 
+    "stderr": "", 
+    "stdout": "Your playbook ran successfully", 
+    "stdout_lines": [
+        "Your playbook ran successfully"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:52:53,681 p=7556 u=bpleines |   __________________________________________________________
+< TASK [Verify the successful revert of your playbook run] >
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:53,681 p=7556 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:14
+2017-01-27 09:52:53,708 p=7556 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:52:53,734 p=7556 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:52:53,735 p=7556 u=bpleines |  localhost                  : ok=8    changed=4    unreachable=0    failed=0   
+2017-01-27 09:59:00,337 p=8034 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 09:59:00,393 p=8034 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml
+2017-01-27 09:59:00,440 p=8034 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:00,441 p=8034 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 09:59:00,464 p=8034 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:00,508 p=8034 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:00,508 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 09:59:00,608 p=8034 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:59:00,709 p=8034 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001845", 
+    "end": "2017-01-27 09:59:00.696606", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:59:00.694761", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:59:00,730 p=8034 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:00,730 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 09:59:00,760 p=8034 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "ansible_facts": {
+        "pwd": "/home/bpleines/ansible-playground"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "/home/bpleines/ansible-playground"
+        }, 
+        "module_name": "set_fact"
+    }, 
+    "item": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:59:00,783 p=8034 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:00,783 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:11
+2017-01-27 09:59:00,810 p=8034 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-01-27 09:59:00,832 p=8034 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:00,832 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:16
+2017-01-27 09:59:00,861 p=8034 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:59:00,964 p=8034 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your name is undefined\"", 
+    "delta": "0:00:00.001968", 
+    "end": "2017-01-27 09:59:00.952762", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your name is undefined\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:59:00.950794", 
+    "stderr": "", 
+    "stdout": "Your name is undefined", 
+    "stdout_lines": [
+        "Your name is undefined"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:59:00,985 p=8034 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:00,986 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:20
+2017-01-27 09:59:01,015 p=8034 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:59:01,117 p=8034 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your profession is mysterious\"", 
+    "delta": "0:00:00.001875", 
+    "end": "2017-01-27 09:59:01.106198", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your profession is mysterious\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:59:01.104323", 
+    "stderr": "", 
+    "stdout": "Your profession is mysterious", 
+    "stdout_lines": [
+        "Your profession is mysterious"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:59:01,138 p=8034 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:01,138 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:24
+2017-01-27 09:59:01,258 p=8034 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-01-27 09:59:01,358 p=8034 u=bpleines |  ok: [localhost] => {
+    "backup": "", 
+    "changed": false, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "meta", 
+            "insertbefore": null, 
+            "line": "<link rel=\"stylesheet\" type=\"text/css\" href=\"redhatbackground.css\">", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "msg": ""
+}
+2017-01-27 09:59:01,380 p=8034 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:01,380 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:30
+2017-01-27 09:59:01,409 p=8034 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-01-27 09:59:01,513 p=8034 u=bpleines |  ok: [localhost] => {
+    "backup": "", 
+    "changed": false, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "found": 0, 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": null, 
+            "insertbefore": null, 
+            "line": null, 
+            "mode": null, 
+            "owner": null, 
+            "regexp": "Nothing yet...", 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "absent", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "msg": ""
+}
+2017-01-27 09:59:01,535 p=8034 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:01,535 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml:1
+2017-01-27 09:59:01,563 p=8034 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:59:01,585 p=8034 u=bpleines |   ___________________________________________________
+< TASK [Verify the completion of your playbook run] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:01,585 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:10
+2017-01-27 09:59:01,612 p=8034 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 09:59:01,715 p=8034 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "echo \"Your playbook ran successfully\"", 
+    "delta": "0:00:00.001914", 
+    "end": "2017-01-27 09:59:01.703738", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your playbook ran successfully\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 09:59:01.701824", 
+    "stderr": "", 
+    "stdout": "Your playbook ran successfully", 
+    "stdout_lines": [
+        "Your playbook ran successfully"
+    ], 
+    "warnings": []
+}
+2017-01-27 09:59:01,737 p=8034 u=bpleines |   __________________________________________________________
+< TASK [Verify the successful revert of your playbook run] >
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:01,737 p=8034 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:14
+2017-01-27 09:59:01,763 p=8034 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 09:59:01,788 p=8034 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 09:59:01,789 p=8034 u=bpleines |  localhost                  : ok=8    changed=2    unreachable=0    failed=0   
+2017-01-27 10:05:12,107 p=8519 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-01-27 10:05:12,161 p=8519 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml
+2017-01-27 10:05:12,164 p=8519 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml
+2017-01-27 10:05:12,212 p=8519 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,212 p=8519 u=bpleines |  1 plays in myplaybook.yml
+2017-01-27 10:05:12,236 p=8519 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,280 p=8519 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,280 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-01-27 10:05:12,380 p=8519 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 10:05:12,483 p=8519 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.002139", 
+    "end": "2017-01-27 10:05:12.471766", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 10:05:12.469627", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-01-27 10:05:12,503 p=8519 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Set pwd to the value obtained \
+\ above]                                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,504 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:5
+2017-01-27 10:05:12,535 p=8519 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "ansible_facts": {
+        "pwd": "/home/bpleines/ansible-playground"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "/home/bpleines/ansible-playground"
+        }, 
+        "module_name": "set_fact"
+    }, 
+    "item": "/home/bpleines/ansible-playground"
+}
+2017-01-27 10:05:12,559 p=8519 u=bpleines |   ____________________________________
+< TASK [bpleines.playground : debug] >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,559 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:11
+2017-01-27 10:05:12,588 p=8519 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-01-27 10:05:12,609 p=8519 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,609 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:2
+2017-01-27 10:05:12,635 p=8519 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 10:05:12,660 p=8519 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,660 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:6
+2017-01-27 10:05:12,689 p=8519 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 10:05:12,709 p=8519 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,709 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:10
+2017-01-27 10:05:12,736 p=8519 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 10:05:12,759 p=8519 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,760 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:16
+2017-01-27 10:05:12,784 p=8519 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 10:05:12,808 p=8519 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:12,808 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml:1
+2017-01-27 10:05:12,923 p=8519 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/stat.py
+2017-01-27 10:05:13,105 p=8519 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/copy.py
+2017-01-27 10:05:13,197 p=8519 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "checksum": "1996bdde48d59aabee08e580272753d0d19df64c", 
+    "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+    "gid": 1000, 
+    "group": "bpleines", 
+    "invocation": {
+        "module_args": {
+            "backup": false, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": true, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": "revert.html", 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": "/home/bpleines/.ansible/tmp/ansible-tmp-1485540313.02-27062212404302/source", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "md5sum": "579cbecfb82c6377d3243d9d79034db8", 
+    "mode": "0664", 
+    "owner": "bpleines", 
+    "secontext": "unconfined_u:object_r:user_home_t:s0", 
+    "size": 129, 
+    "src": "/home/bpleines/.ansible/tmp/ansible-tmp-1485540313.02-27062212404302/source", 
+    "state": "file", 
+    "uid": 1000
+}
+2017-01-27 10:05:13,219 p=8519 u=bpleines |   ___________________________________________________
+< TASK [Verify the completion of your playbook run] >
+ ---------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:13,219 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:10
+2017-01-27 10:05:13,249 p=8519 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-01-27 10:05:13,351 p=8519 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": "echo \"Your playbook ran successfully\"", 
+    "delta": "0:00:00.001980", 
+    "end": "2017-01-27 10:05:13.339514", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your playbook ran successfully\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-01-27 10:05:13.337534", 
+    "stderr": "", 
+    "stdout": "Your playbook ran successfully", 
+    "stdout_lines": [
+        "Your playbook ran successfully"
+    ], 
+    "warnings": []
+}
+2017-01-27 10:05:13,372 p=8519 u=bpleines |   __________________________________________________________
+< TASK [Verify the successful revert of your playbook run] >
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:13,372 p=8519 u=bpleines |  task path: /home/bpleines/ansible-playground/myplaybook.yml:14
+2017-01-27 10:05:13,398 p=8519 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-01-27 10:05:13,423 p=8519 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-01-27 10:05:13,423 p=8519 u=bpleines |  localhost                  : ok=5    changed=3    unreachable=0    failed=0   

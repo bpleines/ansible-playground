@@ -4,12 +4,17 @@
   gather_facts: False
   roles:
     - role: bpleines.playground
-      my_name: Branden P
-      my_profession: Software Consultant
+      revert: true
   
   tasks:
-    - name: "Verify that anything is being run"
-      shell: echo "Verified!"
+    - name: "Verify the completion of your playbook run"
+      shell: echo "Your playbook ran successfully"
+      when: revert == false
+
+    - name: "Verify the successful revert of your playbook run"
+      shell: echo "Your playbook revert was successfull"
+      when: revert == true
+
     #- name: "Template out a basic file"
     #  template:
     #    src: ./basicTemplate.j2
