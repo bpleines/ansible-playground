@@ -6,18 +6,4 @@
     - role: bpleines.playground
       #my_name: Branden
       #my_profession: Consultant
-      revert: true
-  
-  tasks:
-    - name: "Verify the completion of your playbook run"
-      shell: echo "Your playbook ran successfully"
-      when: revert == false
-
-    - name: "Verify the successful revert of your playbook run"
-      shell: echo "Your playbook revert was successfull"
-      when: revert == true
-
-    #- name: "Template out a basic file"
-    #  template:
-    #    src: ./basicTemplate.j2
-    #    dest: ./templatedFile
+      #revert: true

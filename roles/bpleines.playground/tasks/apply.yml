@@ -18,4 +18,22 @@
         dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
         regexp: 'Nothing yet...'
         state: absent
-  when: "revert == false"
+
+   - name: "Add the javascript button to go to expenses"
+     blockinfile:
+        dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
+        insertafter: "<br>"
+        marker: '<!- Ansible does not like blank markers >'
+        block: |
+          <p id="demo"></p>
+          <button type="button" onclick="location.href='https://rhebs.corp.redhat.com';">Go to expenses</button>
+   
+   - name: "Verify the completion of your playbook run"
+     shell: echo "Your playbook ran successfully"
+     when: "revert == false"
+
+   #Note that this will always be skipped
+   - name: "Verify the successful revert of your playbook run"
+     shell: echo "Your playbook revert was successfull"
+     when: "revert == true"
+
