@@ -4,6 +4,6 @@
   gather_facts: False
   roles:
     - role: bpleines.playground
-      #my_name: Branden
-      #my_profession: Consultant
+      my_name: Branden
+      my_profession: Consultant
       #revert: true

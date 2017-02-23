@@ -1,6 +1,7 @@
 - name: "Obtain working directory path for your filesystem"
   shell: pwd
   register: printed_working_directory
+  changed_when: no
 
 - name: "Set an Ansible variable called pwd to the output registered from the task obtained above"
   set_fact:
@@ -10,6 +11,7 @@
 
 - name: "Print out the value of your new pwd variable to ensure it's correct"
   debug:
+  changed_when: no
     msg: '{{ pwd }}'
 
 - name: "Call apply.yml when revert equals false"
