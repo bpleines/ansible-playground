@@ -19,11 +19,11 @@
         regexp: 'Nothing yet...'
         state: absent
 
-   - name: "Add the javascript button to go to expenses"
+   - name: "Add the javascript button to go to the Ansible documentation"
      blockinfile:
         dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
         insertafter: "<br>"
         marker: '<!- Ansible does not like blank markers >'
         block: |
           <p id="demo"></p>
-          <button type="button" onclick="location.href='https://rhebs.corp.redhat.com';">Go to expenses</button>
+          <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_roles.html';">Go to expenses</button>
