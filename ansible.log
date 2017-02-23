@@ -25855,3 +25855,101 @@ The offending line appears to be:
 }
 2017-02-23 14:23:56,405 p=31036 u=bpleines |   [ERROR]: User interrupted execution
 
+2017-02-23 14:26:40,002 p=31565 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-02-23 14:26:40,017 p=31565 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 15, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  changed_when: no
+    msg: '{{ pwd }}'
+       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-02-23 14:28:54,003 p=31936 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-02-23 14:28:54,025 p=31936 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 15, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  changed_when: no
+    msg: '{{ pwd }}'
+       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-02-23 14:29:46,659 p=32206 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-02-23 14:29:46,676 p=32206 u=bpleines |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml': line 14, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  changed_when: no
+    msg: '{{ pwd }}'
+       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-02-23 14:32:09,474 p=32397 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-02-23 14:32:09,529 p=32397 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml
+2017-02-23 14:32:09,533 p=32397 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml
+2017-02-23 14:32:09,581 p=32397 u=bpleines |   __________________________
+< PLAYBOOK: myplaybook.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-02-23 14:32:09,581 p=32397 u=bpleines |  1 plays in myplaybook.yml
+2017-02-23 14:32:09,605 p=32397 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-02-23 14:32:11,141 p=32397 u=bpleines |   [ERROR]: User interrupted execution
+
