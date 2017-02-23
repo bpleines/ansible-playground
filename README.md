@@ -8,7 +8,7 @@ This is a simple Ansible role to show off some basic features of Ansible in a gr
 <ol>
 <li>Install Ansible on your linux machine (I used v2.2)</li>
 <li>Navigate to the project's top level directory, you should see myplaybook.yml</li>
-<li>Navigate to <i>roles/bpleines.playground/files/<i> and open index.html with your favorite web browser. There shouldn't be much here</li>
+<li>Navigate to <i>roles/bpleines.playground/files/</i> and open index.html with your favorite web browser. There shouldn't be much here</li>
 <li>Enter the command <i>ansible-playbook myplaybook.yml -vvv --step</i> to begin execution of the playbook</li>
 </ol>
 <h3>Stepping through the playbook run</h3>
