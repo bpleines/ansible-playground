@@ -25,6 +25,7 @@ The playbook tasks run sequetially. After each task that you enter yes to step t
 <li>Open myplaybook.yml and uncomment the revert: true variable declarance. </li>
 <li>Run <i>ansible-playbook myplaybook.yml -vvv</i>. You won't be prompted for a step by step, but notice that most of the previously executed tasks are skipped, but the "Overwrite..." task is executed. </li>
 <li> Refresh your web browser. You're back to square one.</li>
+</ul>
 
 <h3> Next steps </h3>
 Take a look at the <i>main.yml, apply.yml, and revert.yml</i> tasks. If it isn't clear what a keyword does, the Ansible documents will help highlight this. The tasks are kept very simple so that you can change and play with them. Ansible is intended for configuring/maintaining states much more complex than this, and ansible-playground deals with a very small subset of the Ansible modules available.
