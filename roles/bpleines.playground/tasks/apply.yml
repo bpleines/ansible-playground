@@ -26,4 +26,4 @@
         marker: '<!- Ansible does not like blank markers >'
         block: |
           <p id="demo"></p>
-          <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_roles.html';">Go to expenses</button>
+          <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_roles.html';">Go to Ansible Docs</button>
