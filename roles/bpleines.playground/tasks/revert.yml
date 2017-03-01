@@ -1,5 +1,5 @@
 - name: "Overwrite index.html with revert.html so you can start over"
   copy:
-    src: '{{ pwd }}/roles/bpleines.playground/files/revert.html'
-    dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'  
+     src: '{{ pwd }}/roles/bpleines.playground/files/revert.html'
+     dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'  
 

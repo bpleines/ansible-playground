@@ -1,0 +1,112 @@
+- block:
+    - name: "Add a horizontal row of blue circles"
+      blockinfile:
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+         insertafter: "<br>"
+         marker: '<!- Ansible does not like blank markers >'
+         block: |
+           <svg xmlns="http://www.w3.org/2000/svg">
+               <circle cx="{{ item }}" cy="50" r="40" fill="blue" />
+           </svg>
+      with_items:
+          - '40'
+          - '90'
+          - '140'
+          - '190' 
+          - '240'
+          - '260'
+
+    - name: "Reset page"
+      copy:
+         src: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoopsCOPY.html'
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+ 
+    - name: "Add a row of colored circles"
+      blockinfile:
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+         insertafter: "<br>"
+         marker: '<!- Ansible does not like blank markers >'
+         block: |
+           <svg xmlns="http://www.w3.org/2000/svg">
+               <circle cx="{{ item.xcoordinate }}" cy="50" r="40" fill="{{ item.color }}" />
+           </svg>
+      with_items:
+          - { xcoordinate: '40', color: 'blue' }
+          - { xcoordinate: '40', color: 'yellow' }
+          - { xcoordinate: '40', color: 'green' }
+          - { xcoordinate: '40', color: 'pink' }
+          - { xcoordinate: '40', color: 'orange' }
+          - { xcoordinate: '40', color: 'purple' }
+
+    - name: "Reset page"
+      copy:
+         src: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoopsCOPY.html'
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+
+    - name: "Add several rows of multicolored circles"
+      blockinfile:
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+         insertafter: "<br>"
+         marker: '<!- Ansible does not like blank markers >'
+         block: |
+           <svg xmlns="http://www.w3.org/2000/svg">
+               <circle cx="{{ item[0] }}" cy="{{ item[1] }}" r="40" fill="{{ item[2] }}" />
+           </svg>
+      with_nested:
+          - {40, 70, 110}
+          - {40, 80}
+          - {blue, yellow, green}
+      
+    - name: "Reset page"
+      copy:
+         src: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoopsCOPY.html'
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+
+    - name: "Add several rows of multicolored circles with variables"
+      blockinfile:
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+         insertafter: "<br>"
+         marker: '<!- Ansible does not like blank markers >'
+         block: |
+           <svg xmlns="http://www.w3.org/2000/svg">
+               <circle cx="{{ item[0] }}" cy="{{ item[1] }}" r="40" fill="{{ item[2] }}" />
+           </svg>
+      with_nested:
+          - "{{ x_coordinates }}"
+          - "{{ y_coordinates }}"
+          - "{{ colors }}"
+
+    - name: "Reset page"
+      copy:
+         src: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoopsCOPY.html'
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+
+    - name: "Add the javascript button to go to the Ansible Loops documentation"
+      blockinfile:
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+         insertafter: "<center>"
+         marker: '<!- Ansible does not like blank markers >'
+         block: |
+             <p id="docs"></p>
+             <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_loops.html';">Go to Ansible Loops Docs</button>
+ 
+    - name: "Add the javascript button to go to the Ansible Variables documentation"
+      blockinfile:
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+         insertafter: "<center>"
+         marker: '<!- Ansible does not like blank markers >'
+         block: |
+             <p id="docs"></p>
+             <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_variables.html';">Go to Ansible Variables Docs</button>
+
+    - name: "Add the javascript button to continue the tutorial"
+      blockinfile:
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+         insertafter: "<center>"
+         marker: '<!- Ansible does not like blank markers >'
+         block: |
+             <p id="docs"></p>
+             <button type="button" onclick="location.href='{{ pwd }}/roles/bpleines.graphicalLoops/files/thatsAWrap.html';">Continue the Tutorial</button>
+
+
+    

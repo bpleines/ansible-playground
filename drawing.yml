@@ -1,0 +1,6 @@
+---
+- hosts: localhosts
+  connection: local
+  gather_facts: False
+  roles:
+    - role: bpleines.graphicalLoops

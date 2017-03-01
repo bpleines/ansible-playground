@@ -1,0 +1,5 @@
+---
+# vars file for bpleines.graphicalLoops
+x_coordinates: { 40, 70, 110 }
+y_coordinates: { 40, 80 }
+colors: { blue, yellow, green, pink, orange, purple } 

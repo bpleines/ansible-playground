@@ -19,11 +19,38 @@
         regexp: 'Nothing yet...'
         state: absent
 
-   - name: "Add the javascript button to go to the Ansible documentation"
+   - name: "Add the javascript button to go to the Ansible roles documentation"
      blockinfile:
         dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
         insertafter: "<br>"
         marker: '<!- Ansible does not like blank markers >'
         block: |
-          <p id="demo"></p>
-          <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_roles.html';">Go to Ansible Docs</button>
+          <p id="docs"></p>
+          <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_roles.html';">Ansible Roles Docs</button>
+
+   - name: "Add the javascript button to go to the Ansible tasks documentation"
+     blockinfile:
+        dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
+        insertafter: "<br>"
+        marker: '<!- Ansible does not like blank markers >'
+        block: |
+          <p id="docs"></p>
+          <button type="button" onclick="location.href='http://docs.ansible.com/ansible/playbooks_intro.html';">Ansible Tasks Docs</button>
+
+   - name: "Add the javascript button to go to the Ansible file modules documentation"
+     blockinfile:
+        dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
+        insertafter: "<br>"
+        marker: '<!- Ansible does not like blank markers >'
+        block: |
+          <p id="docs"></p>
+          <button type="button" onclick="location.href='http://docs.ansible.com/ansible/list_of_files_modules.html';">Ansible File Module Docs</button>
+
+   - name: "Add the javascript button to continue the tutorial"
+     blockinfile:
+        dest: '{{ pwd }}/roles/bpleines.playground/files/index.html'
+        insertafter: "Go to Ansible Docs"
+        marker: '<!- Ansible does not like blank markers >'
+        block: |
+          <p id="continue"></p>
+          <button type="button" onclick="location.href='{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html';">Continue the tutorial</button>
