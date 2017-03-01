@@ -1,4 +1,10 @@
 - block:
+
+    - name: "Reset page"
+      copy:
+         src: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoopsCOPY.html'
+         dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'
+
     - name: "Add a horizontal row of blue circles"
       blockinfile:
          dest: '{{ pwd }}/roles/bpleines.graphicalLoops/files/graphicalLoops.html'

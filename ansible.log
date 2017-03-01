@@ -25297,3 +25297,1566 @@ Could be written as:
 2017-03-01 15:11:38,989 p=20532 u=bpleines |  changed: [localhost]
 2017-03-01 15:11:39,896 p=20532 u=bpleines |   [ERROR]: User interrupted execution
 
+2017-03-01 15:15:23,634 p=21222 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-03-01 15:15:23,687 p=21222 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml
+2017-03-01 15:15:23,691 p=21222 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml
+2017-03-01 15:15:23,738 p=21222 u=bpleines |   __________________________
+< PLAYBOOK: playground.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:23,738 p=21222 u=bpleines |  1 plays in playground.yml
+2017-03-01 15:15:23,762 p=21222 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:23,805 p=21222 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:23,805 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-03-01 15:15:23,897 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-03-01 15:15:23,991 p=21222 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.002038", 
+    "end": "2017-03-01 15:15:23.979712", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-03-01 15:15:23.977674", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-03-01 15:15:24,013 p=21222 u=bpleines |   ____________________________________________________________
+/ TASK [bpleines.playground : Set an Ansible variable called \
+\ pwd to the output registered from the task obtained above] /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:24,013 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:6
+2017-03-01 15:15:24,046 p=21222 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "ansible_facts": {
+        "pwd": "/home/bpleines/ansible-playground"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "/home/bpleines/ansible-playground"
+        }, 
+        "module_name": "set_fact"
+    }, 
+    "item": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:15:24,069 p=21222 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Print out the value of your new \
+\ pwd variable to ensure it's correct]                        /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:24,069 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:12
+2017-03-01 15:15:24,098 p=21222 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:15:24,119 p=21222 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:24,119 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:2
+2017-03-01 15:15:24,152 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-03-01 15:15:24,255 p=21222 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your name is undefined\"", 
+    "delta": "0:00:00.001963", 
+    "end": "2017-03-01 15:15:24.243474", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your name is undefined\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-03-01 15:15:24.241511", 
+    "stderr": "", 
+    "stdout": "Your name is undefined", 
+    "stdout_lines": [
+        "Your name is undefined"
+    ], 
+    "warnings": []
+}
+2017-03-01 15:15:24,276 p=21222 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:24,276 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:6
+2017-03-01 15:15:24,311 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-03-01 15:15:24,419 p=21222 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "echo \"Your profession is mysterious\"", 
+    "delta": "0:00:00.002271", 
+    "end": "2017-03-01 15:15:24.406434", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "echo \"Your profession is mysterious\"", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-03-01 15:15:24.404163", 
+    "stderr": "", 
+    "stdout": "Your profession is mysterious", 
+    "stdout_lines": [
+        "Your profession is mysterious"
+    ], 
+    "warnings": []
+}
+2017-03-01 15:15:24,441 p=21222 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:24,442 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:10
+2017-03-01 15:15:24,567 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-03-01 15:15:24,674 p=21222 u=bpleines |  changed: [localhost] => {
+    "backup": "", 
+    "changed": true, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "meta", 
+            "insertbefore": null, 
+            "line": "<link rel=\"stylesheet\" type=\"text/css\" href=\"redhatbackground.css\">", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "msg": "line added"
+}
+2017-03-01 15:15:24,695 p=21222 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:24,695 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:16
+2017-03-01 15:15:24,726 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/lineinfile.py
+2017-03-01 15:15:24,876 p=21222 u=bpleines |  changed: [localhost] => {
+    "backup": "", 
+    "changed": true, 
+    "diff": [
+        {
+            "after": "", 
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)", 
+            "before": "", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (content)"
+        }, 
+        {
+            "after_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)", 
+            "before_header": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html (file attributes)"
+        }
+    ], 
+    "found": 1, 
+    "invocation": {
+        "module_args": {
+            "backrefs": false, 
+            "backup": false, 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": null, 
+            "insertbefore": null, 
+            "line": null, 
+            "mode": null, 
+            "owner": null, 
+            "regexp": "Nothing yet...", 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "absent", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "lineinfile"
+    }, 
+    "msg": "1 line(s) removed"
+}
+2017-03-01 15:15:24,902 p=21222 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to go \
+\ to the Ansible roles documentation]                         /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:24,903 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:22
+2017-03-01 15:15:25,048 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/extras/files/blockinfile.py
+2017-03-01 15:15:25,157 p=21222 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "invocation": {
+        "module_args": {
+            "backup": false, 
+            "block": "<p id=\"docs\"></p>\n<button type=\"button\" onclick=\"location.href='http://docs.ansible.com/ansible/playbooks_roles.html';\">Ansible Roles Docs</button>\n", 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "<br>", 
+            "insertbefore": null, 
+            "marker": "<!- Ansible does not like blank markers >", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "blockinfile"
+    }, 
+    "msg": "Block inserted"
+}
+2017-03-01 15:15:25,178 p=21222 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to go \
+\ to the Ansible tasks documentation]                         /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:25,178 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:31
+2017-03-01 15:15:25,209 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/extras/files/blockinfile.py
+2017-03-01 15:15:25,322 p=21222 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "invocation": {
+        "module_args": {
+            "backup": false, 
+            "block": "<p id=\"docs\"></p>\n<button type=\"button\" onclick=\"location.href='http://docs.ansible.com/ansible/playbooks_intro.html';\">Ansible Tasks Docs</button>\n", 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "<br>", 
+            "insertbefore": null, 
+            "marker": "<!- Ansible does not like blank markers >", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "blockinfile"
+    }, 
+    "msg": "Block inserted"
+}
+2017-03-01 15:15:25,343 p=21222 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to go \
+\ to the Ansible file modules documentation]                  /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:25,343 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:40
+2017-03-01 15:15:25,374 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/extras/files/blockinfile.py
+2017-03-01 15:15:25,481 p=21222 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "invocation": {
+        "module_args": {
+            "backup": false, 
+            "block": "<p id=\"docs\"></p>\n<button type=\"button\" onclick=\"location.href='http://docs.ansible.com/ansible/list_of_files_modules.html';\">Ansible File Module Docs</button>\n", 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "<br>", 
+            "insertbefore": null, 
+            "marker": "<!- Ansible does not like blank markers >", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "blockinfile"
+    }, 
+    "msg": "Block inserted"
+}
+2017-03-01 15:15:25,502 p=21222 u=bpleines |   __________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to \
+\ continue the tutorial]                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:25,502 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:49
+2017-03-01 15:15:25,536 p=21222 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/extras/files/blockinfile.py
+2017-03-01 15:15:25,645 p=21222 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "invocation": {
+        "module_args": {
+            "backup": false, 
+            "block": "<p id=\"continue\"></p>\n<button type=\"button\" onclick=\"location.href='/home/bpleines/ansible-playground/roles/bpleines.graphicalLoops/files/graphicalLoops.html';\">Continue the tutorial</button>\n", 
+            "content": null, 
+            "create": false, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": null, 
+            "group": null, 
+            "insertafter": "Go to Ansible Docs", 
+            "insertbefore": null, 
+            "marker": "<!- Ansible does not like blank markers >", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "present", 
+            "unsafe_writes": null, 
+            "validate": null
+        }, 
+        "module_name": "blockinfile"
+    }, 
+    "msg": "Block inserted"
+}
+2017-03-01 15:15:25,666 p=21222 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:25,666 p=21222 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml:1
+2017-03-01 15:15:25,696 p=21222 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:15:25,721 p=21222 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:25,721 p=21222 u=bpleines |  localhost                  : ok=11   changed=6    unreachable=0    failed=0   
+2017-03-01 15:15:50,536 p=21439 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:52,640 p=21439 u=bpleines |   ______________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Obtain \
+| working directory path for your filesystem           |
+\ (N)o/(y)es/(c)ontinue:                               /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:52,665 p=21439 u=bpleines |   __________________________________________________________
+/ TASK [bpleines.graphicalLoops : Obtain working directory \
+\ path for your filesystem]                                /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:52,849 p=21439 u=bpleines |  ok: [localhost]
+2017-03-01 15:15:53,767 p=21439 u=bpleines |   ___________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Set an      \
+| Ansible variable called pwd to the output registered from |
+\ the task obtained above (N)o/(y)es/(c)ontinue:            /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:53,792 p=21439 u=bpleines |   ____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Set an Ansible variable    \
+| called pwd to the output registered from the task obtained |
+\ above]                                                     /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:53,826 p=21439 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground)
+2017-03-01 15:15:55,093 p=21439 u=bpleines |   _____________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Print out the \
+| value of your new pwd variable to ensure it's correct       |
+\ (N)o/(y)es/(c)ontinue:                                      /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:55,115 p=21439 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Print out the value of your \
+\ new pwd variable to ensure it's correct]                    /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:55,147 p=21439 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:15:55,989 p=21439 u=bpleines |   ________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add a    \
+\ horizontal row of blue circles (N)o/(y)es/(c)ontinue:  /
+ --------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:56,013 p=21439 u=bpleines |   _________________________________________________________
+/ TASK [bpleines.graphicalLoops : Add a horizontal row of \
+\ blue circles]                                           /
+ ---------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:15:56,228 p=21439 u=bpleines |  changed: [localhost] => (item=40)
+2017-03-01 15:15:56,332 p=21439 u=bpleines |  changed: [localhost] => (item=90)
+2017-03-01 15:15:56,438 p=21439 u=bpleines |  changed: [localhost] => (item=140)
+2017-03-01 15:15:56,541 p=21439 u=bpleines |  changed: [localhost] => (item=190)
+2017-03-01 15:15:56,648 p=21439 u=bpleines |  changed: [localhost] => (item=240)
+2017-03-01 15:15:56,751 p=21439 u=bpleines |  changed: [localhost] => (item=260)
+2017-03-01 15:16:58,265 p=21439 u=bpleines |   [ERROR]: User interrupted execution
+
+2017-03-01 15:16:59,851 p=21729 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:02,077 p=21729 u=bpleines |   ______________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Obtain \
+| working directory path for your filesystem           |
+\ (N)o/(y)es/(c)ontinue:                               /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:02,100 p=21729 u=bpleines |   __________________________________________________________
+/ TASK [bpleines.graphicalLoops : Obtain working directory \
+\ path for your filesystem]                                /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:02,287 p=21729 u=bpleines |  ok: [localhost]
+2017-03-01 15:17:02,773 p=21729 u=bpleines |   ___________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Set an      \
+| Ansible variable called pwd to the output registered from |
+\ the task obtained above (N)o/(y)es/(c)ontinue:            /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:02,798 p=21729 u=bpleines |   ____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Set an Ansible variable    \
+| called pwd to the output registered from the task obtained |
+\ above]                                                     /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:02,830 p=21729 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground)
+2017-03-01 15:17:03,388 p=21729 u=bpleines |   _____________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Print out the \
+| value of your new pwd variable to ensure it's correct       |
+\ (N)o/(y)es/(c)ontinue:                                      /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:03,412 p=21729 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Print out the value of your \
+\ new pwd variable to ensure it's correct]                    /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:03,443 p=21729 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:17:04,225 p=21729 u=bpleines |   __________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Reset page \
+\ (N)o/(y)es/(c)ontinue:                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:04,249 p=21729 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:04,615 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:09,090 p=21729 u=bpleines |   ________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add a    \
+\ horizontal row of blue circles (N)o/(y)es/(c)ontinue:  /
+ --------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:09,113 p=21729 u=bpleines |   _________________________________________________________
+/ TASK [bpleines.graphicalLoops : Add a horizontal row of \
+\ blue circles]                                           /
+ ---------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:09,325 p=21729 u=bpleines |  changed: [localhost] => (item=40)
+2017-03-01 15:17:09,431 p=21729 u=bpleines |  changed: [localhost] => (item=90)
+2017-03-01 15:17:09,530 p=21729 u=bpleines |  changed: [localhost] => (item=140)
+2017-03-01 15:17:09,634 p=21729 u=bpleines |  changed: [localhost] => (item=190)
+2017-03-01 15:17:09,735 p=21729 u=bpleines |  changed: [localhost] => (item=240)
+2017-03-01 15:17:09,837 p=21729 u=bpleines |  changed: [localhost] => (item=260)
+2017-03-01 15:17:12,950 p=21729 u=bpleines |   __________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Reset page \
+\ (N)o/(y)es/(c)ontinue:                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:12,975 p=21729 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:13,193 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:16,962 p=21729 u=bpleines |   ____________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add a row of \
+\ colored circles (N)o/(y)es/(c)ontinue:                     /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:16,986 p=21729 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.graphicalLoops : Add a row of colored \
+\ circles]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:17,115 p=21729 u=bpleines |  changed: [localhost] => (item={u'color': u'blue', u'xcoordinate': u'40'})
+2017-03-01 15:17:17,216 p=21729 u=bpleines |  changed: [localhost] => (item={u'color': u'yellow', u'xcoordinate': u'40'})
+2017-03-01 15:17:17,321 p=21729 u=bpleines |  changed: [localhost] => (item={u'color': u'green', u'xcoordinate': u'40'})
+2017-03-01 15:17:17,423 p=21729 u=bpleines |  changed: [localhost] => (item={u'color': u'pink', u'xcoordinate': u'40'})
+2017-03-01 15:17:17,528 p=21729 u=bpleines |  changed: [localhost] => (item={u'color': u'orange', u'xcoordinate': u'40'})
+2017-03-01 15:17:17,631 p=21729 u=bpleines |  changed: [localhost] => (item={u'color': u'purple', u'xcoordinate': u'40'})
+2017-03-01 15:17:21,754 p=21729 u=bpleines |   __________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Reset page \
+\ (N)o/(y)es/(c)ontinue:                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:21,778 p=21729 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:21,998 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:26,936 p=21729 u=bpleines |   ___________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add several \
+\ rows of multicolored circles (N)o/(y)es/(c)ontinue:       /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:26,960 p=21729 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.graphicalLoops : Add several rows of \
+\ multicolored circles]                               /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:27,087 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'blue'])
+2017-03-01 15:17:27,190 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'green'])
+2017-03-01 15:17:27,291 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'yellow'])
+2017-03-01 15:17:27,395 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'blue'])
+2017-03-01 15:17:27,498 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'green'])
+2017-03-01 15:17:27,601 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'yellow'])
+2017-03-01 15:17:27,702 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'blue'])
+2017-03-01 15:17:27,805 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'green'])
+2017-03-01 15:17:27,912 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'yellow'])
+2017-03-01 15:17:28,018 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'blue'])
+2017-03-01 15:17:28,122 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'green'])
+2017-03-01 15:17:28,223 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'yellow'])
+2017-03-01 15:17:28,328 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'blue'])
+2017-03-01 15:17:28,435 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'green'])
+2017-03-01 15:17:28,542 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'yellow'])
+2017-03-01 15:17:28,647 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'blue'])
+2017-03-01 15:17:28,753 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'green'])
+2017-03-01 15:17:28,860 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'yellow'])
+2017-03-01 15:17:32,220 p=21729 u=bpleines |   __________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Reset page \
+\ (N)o/(y)es/(c)ontinue:                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:32,244 p=21729 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:32,458 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:36,250 p=21729 u=bpleines |   ___________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add several \
+| rows of multicolored circles with variables               |
+\ (N)o/(y)es/(c)ontinue:                                    /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:36,275 p=21729 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.graphicalLoops : Add several rows of \
+\ multicolored circles with variables]                /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:36,404 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'blue'])
+2017-03-01 15:17:36,507 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'pink'])
+2017-03-01 15:17:36,609 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'purple'])
+2017-03-01 15:17:36,712 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'yellow'])
+2017-03-01 15:17:36,814 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'green'])
+2017-03-01 15:17:36,918 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 40, u'orange'])
+2017-03-01 15:17:37,022 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'blue'])
+2017-03-01 15:17:37,126 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'pink'])
+2017-03-01 15:17:37,229 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'purple'])
+2017-03-01 15:17:37,334 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'yellow'])
+2017-03-01 15:17:37,439 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'green'])
+2017-03-01 15:17:37,543 p=21729 u=bpleines |  changed: [localhost] => (item=[40, 80, u'orange'])
+2017-03-01 15:17:37,647 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'blue'])
+2017-03-01 15:17:37,750 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'pink'])
+2017-03-01 15:17:37,852 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'purple'])
+2017-03-01 15:17:37,958 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'yellow'])
+2017-03-01 15:17:38,062 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'green'])
+2017-03-01 15:17:38,162 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 40, u'orange'])
+2017-03-01 15:17:38,264 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'blue'])
+2017-03-01 15:17:38,368 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'pink'])
+2017-03-01 15:17:38,472 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'purple'])
+2017-03-01 15:17:38,575 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'yellow'])
+2017-03-01 15:17:38,678 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'green'])
+2017-03-01 15:17:38,783 p=21729 u=bpleines |  changed: [localhost] => (item=[70, 80, u'orange'])
+2017-03-01 15:17:38,886 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'blue'])
+2017-03-01 15:17:38,989 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'pink'])
+2017-03-01 15:17:39,091 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'purple'])
+2017-03-01 15:17:39,196 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'yellow'])
+2017-03-01 15:17:39,298 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'green'])
+2017-03-01 15:17:39,401 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 40, u'orange'])
+2017-03-01 15:17:39,505 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'blue'])
+2017-03-01 15:17:39,609 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'pink'])
+2017-03-01 15:17:39,719 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'purple'])
+2017-03-01 15:17:39,831 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'yellow'])
+2017-03-01 15:17:39,934 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'green'])
+2017-03-01 15:17:40,039 p=21729 u=bpleines |  changed: [localhost] => (item=[110, 80, u'orange'])
+2017-03-01 15:17:43,913 p=21729 u=bpleines |   __________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Reset page \
+\ (N)o/(y)es/(c)ontinue:                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:43,936 p=21729 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:44,149 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:48,021 p=21729 u=bpleines |   ____________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add the      \
+| javascript button to go to the Ansible Loops documentation |
+\ (N)o/(y)es/(c)ontinue:                                     /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:48,046 p=21729 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.graphicalLoops : Add the javascript button \
+\ to go to the Ansible Loops documentation]                 /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:48,170 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:48,870 p=21729 u=bpleines |   _______________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add the \
+| javascript button to go to the Ansible Variables      |
+\ documentation (N)o/(y)es/(c)ontinue:                  /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:48,892 p=21729 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.graphicalLoops : Add the javascript button \
+\ to go to the Ansible Variables documentation]             /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:49,016 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:49,550 p=21729 u=bpleines |   _______________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Add the \
+| javascript button to continue the tutorial            |
+\ (N)o/(y)es/(c)ontinue:                                /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:49,574 p=21729 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.graphicalLoops : Add the javascript button \
+\ to continue the tutorial]                                 /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:49,699 p=21729 u=bpleines |  changed: [localhost]
+2017-03-01 15:17:49,721 p=21729 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:17:49,721 p=21729 u=bpleines |  localhost                  : ok=15   changed=12   unreachable=0    failed=0   
+2017-03-01 15:18:51,689 p=23028 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:51,736 p=23028 u=bpleines |   __________________________________________________________
+/ TASK [bpleines.graphicalLoops : Obtain working directory \
+\ path for your filesystem]                                /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:51,921 p=23028 u=bpleines |  ok: [localhost]
+2017-03-01 15:18:51,943 p=23028 u=bpleines |   ____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Set an Ansible variable    \
+| called pwd to the output registered from the task obtained |
+\ above]                                                     /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:51,976 p=23028 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground)
+2017-03-01 15:18:51,999 p=23028 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Print out the value of your \
+\ new pwd variable to ensure it's correct]                    /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:52,030 p=23028 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:18:52,050 p=23028 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:52,414 p=23028 u=bpleines |  changed: [localhost]
+2017-03-01 15:18:52,435 p=23028 u=bpleines |   _________________________________________________________
+/ TASK [bpleines.graphicalLoops : Add a horizontal row of \
+\ blue circles]                                           /
+ ---------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:52,648 p=23028 u=bpleines |  changed: [localhost] => (item=40)
+2017-03-01 15:18:52,748 p=23028 u=bpleines |  changed: [localhost] => (item=90)
+2017-03-01 15:18:52,850 p=23028 u=bpleines |  changed: [localhost] => (item=140)
+2017-03-01 15:18:52,949 p=23028 u=bpleines |  changed: [localhost] => (item=190)
+2017-03-01 15:18:53,051 p=23028 u=bpleines |  changed: [localhost] => (item=240)
+2017-03-01 15:18:53,159 p=23028 u=bpleines |  changed: [localhost] => (item=260)
+2017-03-01 15:18:53,180 p=23028 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:53,331 p=23028 u=bpleines |   [ERROR]: User interrupted execution
+
+2017-03-01 15:18:56,114 p=23230 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:58,010 p=23230 u=bpleines |   ______________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Obtain \
+| working directory path for your filesystem           |
+\ (N)o/(y)es/(c)ontinue:                               /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:58,032 p=23230 u=bpleines |   __________________________________________________________
+/ TASK [bpleines.graphicalLoops : Obtain working directory \
+\ path for your filesystem]                                /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:58,217 p=23230 u=bpleines |  ok: [localhost]
+2017-03-01 15:18:58,688 p=23230 u=bpleines |   ___________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Set an      \
+| Ansible variable called pwd to the output registered from |
+\ the task obtained above (N)o/(y)es/(c)ontinue:            /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:58,710 p=23230 u=bpleines |   ____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Set an Ansible variable    \
+| called pwd to the output registered from the task obtained |
+\ above]                                                     /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:58,742 p=23230 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground)
+2017-03-01 15:18:59,201 p=23230 u=bpleines |   _____________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Print out the \
+| value of your new pwd variable to ensure it's correct       |
+\ (N)o/(y)es/(c)ontinue:                                      /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:59,225 p=23230 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.graphicalLoops : Print out the value of your \
+\ new pwd variable to ensure it's correct]                    /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:18:59,256 p=23230 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:19:01,069 p=23230 u=bpleines |   __________________________________________________________
+/ Perform task: TASK: bpleines.graphicalLoops : Reset page \
+\ (N)o/(y)es/(c)ontinue:                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:19:01,093 p=23230 u=bpleines |   _____________________________________________
+< TASK [bpleines.graphicalLoops : Reset page] >
+ ---------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:19:01,456 p=23230 u=bpleines |  changed: [localhost]
+2017-03-01 15:19:01,657 p=23230 u=bpleines |   [ERROR]: User interrupted execution
+
+2017-03-01 15:20:05,836 p=23483 u=bpleines |  Using /home/bpleines/ansible-playground/ansible.cfg as config file
+2017-03-01 15:20:05,891 p=23483 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml
+2017-03-01 15:20:05,896 p=23483 u=bpleines |  statically included: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml
+2017-03-01 15:20:05,946 p=23483 u=bpleines |   __________________________
+< PLAYBOOK: playground.yml >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:05,947 p=23483 u=bpleines |  1 plays in playground.yml
+2017-03-01 15:20:05,970 p=23483 u=bpleines |   ___________________
+< PLAY [localhosts] >
+ -------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,017 p=23483 u=bpleines |   ___________________________________________________________
+/ TASK [bpleines.playground : Obtain working directory path \
+\ for your filesystem]                                      /
+ -----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,017 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:1
+2017-03-01 15:20:06,111 p=23483 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/commands/command.py
+2017-03-01 15:20:06,210 p=23483 u=bpleines |  ok: [localhost] => {
+    "changed": false, 
+    "cmd": "pwd", 
+    "delta": "0:00:00.001986", 
+    "end": "2017-03-01 15:20:06.198356", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "pwd", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }, 
+        "module_name": "command"
+    }, 
+    "rc": 0, 
+    "start": "2017-03-01 15:20:06.196370", 
+    "stderr": "", 
+    "stdout": "/home/bpleines/ansible-playground", 
+    "stdout_lines": [
+        "/home/bpleines/ansible-playground"
+    ], 
+    "warnings": []
+}
+2017-03-01 15:20:06,230 p=23483 u=bpleines |   ____________________________________________________________
+/ TASK [bpleines.playground : Set an Ansible variable called \
+\ pwd to the output registered from the task obtained above] /
+ ------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,231 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:6
+2017-03-01 15:20:06,263 p=23483 u=bpleines |  ok: [localhost] => (item=/home/bpleines/ansible-playground) => {
+    "ansible_facts": {
+        "pwd": "/home/bpleines/ansible-playground"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "pwd": "/home/bpleines/ansible-playground"
+        }, 
+        "module_name": "set_fact"
+    }, 
+    "item": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:20:06,287 p=23483 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Print out the value of your new \
+\ pwd variable to ensure it's correct]                        /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,287 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/main.yml:12
+2017-03-01 15:20:06,315 p=23483 u=bpleines |  ok: [localhost] => {
+    "msg": "/home/bpleines/ansible-playground"
+}
+2017-03-01 15:20:06,337 p=23483 u=bpleines |   ______________________________________________
+< TASK [bpleines.playground : Print your name] >
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,337 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:2
+2017-03-01 15:20:06,362 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,384 p=23483 u=bpleines |   ____________________________________________________
+< TASK [bpleines.playground : Print your profession] >
+ ----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,384 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:6
+2017-03-01 15:20:06,411 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,431 p=23483 u=bpleines |   ______________________________________________________
+/ TASK [bpleines.playground : Add a background to your \
+\ webpage]                                             /
+ ------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,431 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:10
+2017-03-01 15:20:06,458 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,482 p=23483 u=bpleines |   _____________________________________________________
+/ TASK [bpleines.playground : Remove the default body \
+\ content]                                            /
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,482 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:16
+2017-03-01 15:20:06,508 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,530 p=23483 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to go \
+\ to the Ansible roles documentation]                         /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,530 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:22
+2017-03-01 15:20:06,557 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,579 p=23483 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to go \
+\ to the Ansible tasks documentation]                         /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,579 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:31
+2017-03-01 15:20:06,602 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,626 p=23483 u=bpleines |   _____________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to go \
+\ to the Ansible file modules documentation]                  /
+ -------------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,626 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:40
+2017-03-01 15:20:06,654 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,673 p=23483 u=bpleines |   __________________________________________________________
+/ TASK [bpleines.playground : Add the javascript button to \
+\ continue the tutorial]                                   /
+ ----------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,673 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/apply.yml:49
+2017-03-01 15:20:06,700 p=23483 u=bpleines |  skipping: [localhost] => {
+    "changed": false, 
+    "skip_reason": "Conditional check failed", 
+    "skipped": true
+}
+2017-03-01 15:20:06,724 p=23483 u=bpleines |   _______________________________________________________
+/ TASK [bpleines.playground : Overwrite index.html with \
+\ revert.html so you can start over]                    /
+ -------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:06,724 p=23483 u=bpleines |  task path: /home/bpleines/ansible-playground/roles/bpleines.playground/tasks/revert.yml:1
+2017-03-01 15:20:06,839 p=23483 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/stat.py
+2017-03-01 15:20:07,016 p=23483 u=bpleines |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/core/files/copy.py
+2017-03-01 15:20:07,107 p=23483 u=bpleines |  changed: [localhost] => {
+    "changed": true, 
+    "checksum": "9353effe3aa69923ad7d65d06582e80cc2ef6cd0", 
+    "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+    "gid": 1000, 
+    "group": "bpleines", 
+    "invocation": {
+        "module_args": {
+            "backup": false, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/home/bpleines/ansible-playground/roles/bpleines.playground/files/index.html", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": true, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": "revert.html", 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": "/home/bpleines/.ansible/tmp/ansible-tmp-1488410406.94-150308380464116/source", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "md5sum": "e89846d314d3dd37cd65e46dbb40294d", 
+    "mode": "0664", 
+    "owner": "bpleines", 
+    "secontext": "unconfined_u:object_r:user_home_t:s0", 
+    "size": 153, 
+    "src": "/home/bpleines/.ansible/tmp/ansible-tmp-1488410406.94-150308380464116/source", 
+    "state": "file", 
+    "uid": 1000
+}
+2017-03-01 15:20:07,129 p=23483 u=bpleines |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2017-03-01 15:20:07,129 p=23483 u=bpleines |  localhost                  : ok=4    changed=1    unreachable=0    failed=0   
