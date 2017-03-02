@@ -34,9 +34,9 @@ The playbook tasks run sequetially. After each task that you enter yes to step t
 <li>After each step, refresh the brower to view the affected change</li>
 
 <h3> Next steps </h3>
-Take a look at the <i>main.yml, apply.yml, and revert.yml</i> tasks. If it isn't clear what a keyword does, the Ansible documents will help highlight this. The tasks are kept very simple so that you can change and play with them. Ansible is intended for configuring/maintaining states much more complex than this, and ansible-playground deals with a very small subset of the Ansible modules available.
+Take a look at the tasks <i>main.yml, apply.yml, revert.yml, and drawing.yml</i> tasks. If it isn't clear what a keyword does, the Ansible documents will help highlight this. The tasks are kept very simple so that you can change and play with them. Ansible is intended for configuring/maintaining states much more complex than this, and ansible-playground deals with a very small subset of the Ansible modules available.
 
-It's also important to note that the ansible-playground role breaks a major design paradigm (idempotentcy) to simplify its design. Ideally, you should be able to run <i>apply.yml</i> against a host as many times as you want because Ansible modules monitor the state of a machine. Because we are making local changes to files, running <i> apply.yml </i> several times in a row will have unintended consequences. Luckily, even if you've done this, running the revert will return the file to it's original state.
+It's also important to note that the ansible-playground breaks a major design paradigm (idempotentcy) to simplify its design. Ideally, you should be able to run <i>apply.yml</i> against a host as many times as you want because Ansible modules monitor the state of a machine. Because we are making local changes to files, running <i> apply.yml </i> several times in a row will have unintended consequences. Luckily, even if you've done this, running the revert will return the file to it's original state.
 </body>
 
 
